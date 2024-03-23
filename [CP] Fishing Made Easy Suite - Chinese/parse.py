@@ -7,7 +7,7 @@ output_file_path = 'i18n/zh.json'
 
 section = []
 output_dict = {}
-
+pattern = r",\s*}"
 
 # 打开JSON文件并读取数据
 
@@ -16,9 +16,10 @@ def open_file(file_path):
     items = {}
     try:
         with open(file_path,'r',encoding='utf-8') as f:
-            items = json.load(f)
-    except json.JSONDecodeError:
-        print("JSON解码错误，文件内容可能不是有效的JSON格式。")
+          str = f.read()
+          items = json.loads(re.sub(pattern,'\n}',str)) #处理文件最后一个值带逗号的情况
+    except json.JSONDecodeError as e:
+        print(f"JSON解码错误，文件内容可能不是有效的JSON格式。")
     except FileNotFoundError:
         print("文件未找到，请检查文件路径是否正确。")
     except Exception as e:
@@ -56,14 +57,12 @@ def print_dict(name,obj):
 config = open_file(content_file_path)
 old = open_file(output_file_path)
 
-print_dict("config",config)
+if config and old :
+    print_dict("config",config)
 
-for key , value in old.items():
-    if output_dict[key]:
-        output_dict[key] = value
-
-    
-    
-    
-with open(output_file_path, 'w',encoding='utf-8') as output_file1:
-    json.dump(output_dict,output_file1,indent=4,ensure_ascii=False)
+    for key , value in old.items():
+        if output_dict[key]:
+            output_dict[key] = value
+    with open(output_file_path, 'w',encoding='utf-8') as output_file1:
+        json.dump(output_dict,output_file1,indent=4,ensure_ascii=False)
+        print("翻译文件成功解析")

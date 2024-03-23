@@ -994,5 +994,5 @@
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
-		}
-    }
+		},
+}
