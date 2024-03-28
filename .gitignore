@@ -1,0 +1,11 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/BuyRecipes/bin/Release/net6.0
+/BuyRecipes/obj
+/FishingInfoOverlays/bin/Debug/net6.0
+/FishingInfoOverlays/obj
+/.vs/Stardew
+/BuyRecipes/bin/Debug/net6.0
+/FishingInfoOverlays/bin/Release/net6.0
