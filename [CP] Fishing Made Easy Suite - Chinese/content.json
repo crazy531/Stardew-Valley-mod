@@ -2,8 +2,8 @@
 		    "Highlight Texts For More Info!": {
 			"Section": "= WELCOME! =",
 			"Description": "= Have A Fantastic Day & Happy Fishing! =",
-			"AllowValues": "Version 6.0.1",
-			"Default": "Version 6.0.1"
+			"AllowValues": "Version 6.0.4",
+			"Default": "Version 6.0.4"
         },
 		    "Disable Yearly Developer Gifts": {
 			"Description": "This setting will disable the mod developer gifts you will receive yearly. By default, you will receive a yearly randomized gift from myself :-)",
@@ -57,6 +57,12 @@
 			"Description": "Select a setting to remove or replace Seaweed, Green Algae, and White Algae while fishing. No Weeds and Algae: Disables all weeds and algae while fishing entirely. Crab Pot Fish: Replaces seaweed and algae with crab pot fish during fishing.",
 			"Section": "Fishing Minigame",
             "AllowValues": "Default, No Weeds and Algae, Crab Pot Fish",
+            "Default": "Default"
+		},
+		    "Clean Waters/No Jelly": {
+			"Description": "Select a setting to remove or replace jellies while fishing. No Jellies: Disables all jellies while fishing entirely. Crab Pot Fish: Replaces jellies with crab pot fish during fishing.",
+			"Section": "Fishing Minigame",
+            "AllowValues": "Default, No Jellies, Crab Pot Fish",
             "Default": "Default"
 		},
 		    "Crab Pots No Trash": {
@@ -180,9 +186,9 @@
             "Default": "false"
 		},
 		    "Fish Pond Rare Loot": {
-			"Description": "Select the likelihood of rare loot spawning from fish pond buildings. Options range from 2X to 5X increase. Alternatively, the Rare Loot Chance All 50% option ensures an equal chance for all rare loot from fish ponds to appear. Scroll down for additional options.",
+			"Description": "Select the likelihood of rare loot spawning from fish pond buildings. Options range from 2X to 5X increase. Alternatively, the Rare Loot Chance All 50% option ensures an equal chance for all rare loot from fish ponds to appear. The Less Rare More Roe option decreases the chances for rare loot but increases the chances for Roe. Scroll down for additional options.",
             "Section": "Fish Pond Buildings",
-			"AllowValues": "Default, Rare Loot Chance 2X, Rare Loot Chance 3X, Rare Loot Chance 4X, Rare Loot Chance 5X, Rare Loot Chance All 50%",
+			"AllowValues": "Default, Rare Loot Chance 2X, Rare Loot Chance 3X, Rare Loot Chance 4X, Rare Loot Chance 5X, Rare Loot Chance All 50%, Less Rare More Roe",
             "Default": "Default"
         },
 		    "FP Fish/Quest Spawn Time": {
@@ -198,9 +204,9 @@
             "Default": "false"
 		},
 		    "Legendary Fish Pond Loot": {
-			"Description": "Select the likelihood of legendary fish rare loot spawning from fish pond buildings. The available settings range from 2X to 5X increase. The Rare Loot Chance All 50% option ensures that all rare loot from fish ponds has an equal chance to spawn. Note: This feature requires the Fish Pond Legendary Fish (REQ) setting to be enabled!",
+			"Description": "Select the likelihood of legendary fish rare loot spawning from fish pond buildings. The available settings range from 2X to 5X increase. The Rare Loot Chance All 50% option ensures that all rare loot from fish ponds has an equal chance to spawn. The Less Rare More Roe option decreases the chances for rare loot but increases the chances for Roe. Note: This feature requires the Fish Pond Legendary Fish (REQ) setting to be enabled!",
 			"Section": "Fish Pond Buildings",
-			"AllowValues": "Default, Rare Loot Chance 2X, Rare Loot Chance 3X, Rare Loot Chance 4X, Rare Loot Chance 5X, Rare Loot Chance All 50%",
+			"AllowValues": "Default, Rare Loot Chance 2X, Rare Loot Chance 3X, Rare Loot Chance 4X, Rare Loot Chance 5X, Rare Loot Chance All 50%, Less Rare More Roe",
             "Default": "Default"
 		},
 		    "LG Fish/Quest Spawn Time": {
@@ -995,4 +1001,4 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
-}
+    }

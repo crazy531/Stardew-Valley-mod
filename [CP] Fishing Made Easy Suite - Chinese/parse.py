@@ -61,7 +61,7 @@ if config and old :
     print_dict("config",config)
 
     for key , value in old.items():
-        if output_dict[key]:
+        if output_dict.get(key):
             output_dict[key] = value
     with open(output_file_path, 'w',encoding='utf-8') as output_file1:
         json.dump(output_dict,output_file1,indent=4,ensure_ascii=False)

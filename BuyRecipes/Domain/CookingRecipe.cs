@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Denifia.Stardew.BuyRecipes.Framework;
 using StardewValley;
+using StardewModdingAPI;
 using StardewValley.ItemTypeDefinitions;
+using System.Threading;
 
 namespace Denifia.Stardew.BuyRecipes.Domain
 {
@@ -29,9 +31,32 @@ namespace Denifia.Stardew.BuyRecipes.Domain
             var unknownData = dataParts[1];
 
             //string resultingItemData = dataParts[2];
-            string resultingItemData = ItemRegistry.QualifyItemId(dataParts[2]); ;
-            ResultingItem = DeserializeResultingItem(resultingItemData);
-            if ( ResultingItem.DisplayName != null ) 
+            try
+            {
+            string resultingItemData = ItemRegistry.QualifyItemId(dataParts[2]);
+
+                if (resultingItemData != null || resultingItemData == "")
+                {
+                    ResultingItem = DeserializeResultingItem(resultingItemData);
+
+                }
+                else
+                {
+
+                    ResultingItem = new GameItemWithQuantity
+                    {
+                        Id = dataParts[2],
+                        Quantity = 1,
+                        DisplayName = null,
+                    };    
+                }
+
+
+
+            }
+            catch { }
+
+            if (ResultingItem != null && ResultingItem.DisplayName != null)
             {
                 DisplayName = ResultingItem.DisplayName;
             }
@@ -39,6 +64,7 @@ namespace Denifia.Stardew.BuyRecipes.Domain
             {
                 DisplayName = name;
             }
+
             var aquisitionData = dataParts[3];
             var aquisitionConditions = BuyRecipes.RecipeAquisitionConditions.FirstOrDefault(x => x.AcceptsConditions(aquisitionData));
             if (aquisitionConditions == null)

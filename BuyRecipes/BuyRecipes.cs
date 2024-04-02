@@ -238,12 +238,26 @@ namespace Denifia.Stardew.BuyRecipes
             _cookingRecipes = new List<CookingRecipe>();
             foreach (var recipe in CraftingRecipe.cookingRecipes)
             {
-                CookingRecipe cookingRecipe = new CookingRecipe(recipe.Key, recipe.Value);
-                if (Game1.player.cookingRecipes.ContainsKey(cookingRecipe.Name))
+                try
                 {
-                    cookingRecipe.IsKnown = true;
+                    CookingRecipe cookingRecipe = new CookingRecipe(recipe.Key, recipe.Value);
+                    if (Game1.player.cookingRecipes.ContainsKey(cookingRecipe.Name))
+                    {
+                        cookingRecipe.IsKnown = true;
+                    }
+                    _cookingRecipes.Add(cookingRecipe);
                 }
-                _cookingRecipes.Add(cookingRecipe);
+                catch {
+
+                    Monitor.Log($"Error Recipe:{recipe.Key}, Skip It", LogLevel.Info);
+                    continue;
+
+                }
+
+
+
+
+             
             }
         }
 
