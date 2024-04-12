@@ -53,12 +53,12 @@ namespace StardewMods
                     GenericMCPerScreen(GenericMC, 0);
                     GenericMC.AddPageLink(ModManifest, "colors", () => translate.Get("GenericMC.barColors"), () => translate.Get("GenericMC.barColors"));
 
-                    GenericMC.AddPageLink(ModManifest, "s2", () => translate.Get("GenericMC.SplitScreen2"), () => translate.Get("GenericMC.SplitScreenDesc"));
-                    GenericMC.AddPageLink(ModManifest, "s3", () => translate.Get("GenericMC.SplitScreen3"), () => translate.Get("GenericMC.SplitScreenDesc"));
-                    GenericMC.AddPageLink(ModManifest, "s4", () => translate.Get("GenericMC.SplitScreen4"), () => translate.Get("GenericMC.SplitScreenDesc"));
-                    GenericMCPerScreen(GenericMC, 1);
-                    GenericMCPerScreen(GenericMC, 2);
-                    GenericMCPerScreen(GenericMC, 3);
+                   // GenericMC.AddPageLink(ModManifest, "s2", () => translate.Get("GenericMC.SplitScreen2"), () => translate.Get("GenericMC.SplitScreenDesc"));
+                  //  GenericMC.AddPageLink(ModManifest, "s3", () => translate.Get("GenericMC.SplitScreen3"), () => translate.Get("GenericMC.SplitScreenDesc"));
+                   // GenericMC.AddPageLink(ModManifest, "s4", () => translate.Get("GenericMC.SplitScreen4"), () => translate.Get("GenericMC.SplitScreenDesc"));
+                   // GenericMCPerScreen(GenericMC, 1);
+                   // GenericMCPerScreen(GenericMC, 2);
+                   // GenericMCPerScreen(GenericMC, 3);
 
                     GenericMC.AddPage(ModManifest, "colors", () => translate.Get("GenericMC.barColors"));
                     GenericMC.AddSectionTitle(ModManifest, () => translate.Get("GenericMC.barBackgroundColor"));
@@ -187,24 +187,25 @@ namespace StardewMods
 
         private void UpdateConfig(bool GMCM)
         {
-            for (int i = 0; i < 4; i++)
-            {
-                Overlay.barPosition[i] = new Vector2(config.BarTopLeftLocationX[i] + 2, config.BarTopLeftLocationY[i] + 2); //config: Position of bar
-            }
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Overlay.barPosition[i] = new Vector2(config.BarTopLeftLocationX[i] + 2, config.BarTopLeftLocationY[i] + 2); //config: Position of bar
+            //}
+            Overlay.barPosition= new Vector2(config.BarTopLeftLocationX[0] + 2, config.BarTopLeftLocationY[0] + 2); //config: Position of bar
 
-            Overlay.backgroundMode = config.BarBackgroundMode;                                                              //config: 0=Circles (dynamic), 1=Rectangle (single), 2=Off
-            Overlay.barCrabEnabled = config.BarCrabPotEnabled;                                                              //config: If bait/tackle/bait preview is enabled when holding a fishing rod
-            Overlay.barScale = config.BarScale;                                                                             //config: Custom scale for the location bar.
-            Overlay.iconMode = config.BarIconMode;                                                                          //config: 0=Horizontal Icons, 1=Vertical Icons, 2=Vertical Icons + Text, 3=Off
-            Overlay.maxIcons = config.BarMaxIcons;                                                                          //config: ^Max amount of tackle + trash + fish icons
-            Overlay.maxIconsPerRow = config.BarMaxIconsPerRow;                                                              //config: ^How many per row/column.
-            Overlay.onlyFish = config.OnlyFish;                                                                             //config: Whether to hide things like furniture.
-            Overlay.miniMode = config.MinigamePreviewMode;                                                                  //config: Fish preview in minigame: 0=Full, 1=Simple, 2=BarOnly, 3=Off
-            Overlay.scanRadius = config.BarScanRadius;                                                                      //config: 0: Only checks if can fish, 1-50: also checks if there's water within X tiles around player.
-            Overlay.showPercentages = config.BarShowPercentages;                                                            //config: Whether it should show catch percentages.
-            Overlay.showTackles = config.BarShowBaitAndTackleInfo;                                                          //config: Whether it should show Bait and Tackle info.
-            Overlay.sortMode = config.BarSortMode;                                                                          //config: 0= By Name (text mode only), 1= By Percentage, 2=Off
-            Overlay.uncaughtDark = config.UncaughtFishAreDark;                                                              //config: Whether uncaught fish are displayed as ??? and use dark icons
+            Overlay.backgroundMode = config.BarBackgroundMode[0];                                                              //config: 0=Circles (dynamic), 1=Rectangle (single), 2=Off
+            Overlay.barCrabEnabled = config.BarCrabPotEnabled[0];                                                              //config: If bait/tackle/bait preview is enabled when holding a fishing rod
+            Overlay.barScale = config.BarScale[0];                                                                             //config: Custom scale for the location bar.
+            Overlay.iconMode = config.BarIconMode[0];                                                                          //config: 0=Horizontal Icons, 1=Vertical Icons, 2=Vertical Icons + Text, 3=Off
+            Overlay.maxIcons = config.BarMaxIcons[0];                                                                          //config: ^Max amount of tackle + trash + fish icons
+            Overlay.maxIconsPerRow = config.BarMaxIconsPerRow[0];                                                              //config: ^How many per row/column.
+            Overlay.onlyFish = config.OnlyFish[0];                                                                             //config: Whether to hide things like furniture.
+            Overlay.miniMode = config.MinigamePreviewMode[0];                                                                  //config: Fish preview in minigame: 0=Full, 1=Simple, 2=BarOnly, 3=Off
+            Overlay.scanRadius = config.BarScanRadius[0];                                                                      //config: 0: Only checks if can fish, 1-50: also checks if there's water within X tiles around player.
+            Overlay.showPercentages = config.BarShowPercentages[0];                                                            //config: Whether it should show catch percentages.
+            Overlay.showTackles = config.BarShowBaitAndTackleInfo[0];                                                          //config: Whether it should show Bait and Tackle info.
+            Overlay.sortMode = config.BarSortMode[0];                                                                          //config: 0= By Name (text mode only), 1= By Percentage, 2=Off
+            Overlay.uncaughtDark = config.UncaughtFishAreDark[0];                                                              //config: Whether uncaught fish are displayed as ??? and use dark icons
 
             Overlay.extraCheckFrequency = config.BarExtraCheckFrequency;                                                    //config: 20-220: Bad performance dynamic check to see if there's modded/hardcoded fish
 

@@ -2,8 +2,8 @@
 		    "Highlight Texts For More Info!": {
 			"Section": "= WELCOME! =",
 			"Description": "= Have A Fantastic Day & Happy Fishing! =",
-			"AllowValues": "Version 6.0.4",
-			"Default": "Version 6.0.4"
+			"AllowValues": "Version 6.0.6",
+			"Default": "Version 6.0.6"
         },
 		    "Disable Yearly Developer Gifts": {
 			"Description": "This setting will disable the mod developer gifts you will receive yearly. By default, you will receive a yearly randomized gift from myself :-)",
@@ -12,9 +12,9 @@
             "Default": "false"
 		},
 		    "Fishing Difficulty": {
-			"Description": "Select a difficulty setting for the fishing minigame. Easy Settings: Decrease difficulty by 5% to 100%. Easy Sunday Fishing: Decrease difficulty by 10% to 30% on Sundays only. Hard Settings: Increase difficulty by 5% to 100% with a NIGHTMARE option for those seeking the ultimate challenge! For details on the Dynamic Weather settings, highlight the 'Dynamic Weather Info' below for more information. Scroll down for additional options.",
+			"Description": "Select a difficulty setting for the fishing minigame. Easy Settings: Decrease difficulty by 5% to 100%, and include an option to max out the green fishing bar. This enhancement will be particularly beneficial for players aiming to collect fishing treasure chests and grand full fishing xp. Easy Sunday Fishing: Decrease difficulty by 10% to 30% on Sundays only. Hard Settings: Increase difficulty by 5% to 100% with a NIGHTMARE option for those seeking the ultimate challenge! For details on the Dynamic Weather settings, highlight the 'Dynamic Weather Info' below for more information. Scroll down for additional options.",
             "Section": "Fishing Minigame",
-			"AllowValues": "Default, 5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE, Dynamic Weather (Easy), Dynamic Weather (Easier), Dynamic Weather (Easiest)",
+			"AllowValues": "Default, 5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 100% Easier + Max Fishing Bar, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE, Dynamic Weather (Easy), Dynamic Weather (Easier), Dynamic Weather (Easiest)",
             "Default": "Default"
         },
 		    "= Dynamic Weather Info =": {
@@ -65,6 +65,12 @@
             "AllowValues": "Default, No Jellies, Crab Pot Fish",
             "Default": "Default"
 		},
+		    "Cave Jelly Desert": {
+			"Description": "Cave Jelly will now spawn in the Desert fishing area. Replaces the River Jelly that would normally spawn in that location.",
+			"Section": "Fishing Minigame",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
 		    "Crab Pots No Trash": {
 			"Description": "Crab Pots will no longer yield trash items, but there remains a small chance of obtaining Broken Glasses and CDs.",
 			"Section": "Crab Pot Fishing",
@@ -78,9 +84,9 @@
             "Default": "Default"
 		},
 		    "Fish Sell Value": {
-			"Description": "Select the sell value of all fish (except legendary fish). The range is from 10% to 1000% increase. Refer to the Legendary Fish Sell Values setting below to do the same for legendary fish. Note that enabling or disabling these settings affects newly acquired fish after your chosen setting is enabled. Scroll down for additional options.",
+			"Description": "Select the sell value of all fish (except legendary fish). The range is from 10% to 1000% increase or a 10% to 99% decrease. Refer to the Legendary Fish Sell Values setting below to do the same for legendary fish. Note that enabling or disabling these settings affects newly acquired fish after your chosen setting is enabled. Scroll down for additional options.",
             "Section": "Value of Fishing",
-			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%",
+			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
             "Default": "Default"
         },
 		    "Seasonal Fish On Farm": {
@@ -132,7 +138,7 @@
             "Default": "false"
 		},
 		    "Legendary Fish Sell Value": {
-			"Description": "Select the sell value of legendary fish. The range is from 10% to 1000% increase. Note that enabling or disabling these settings affects newly acquired legendary fish after your chosen setting is enabled. Scroll down for additional options.",
+			"Description": "Select the sell value of legendary fish. The range is from 10% to 1000% increase and a 10% to 99% decrease. Note that enabling or disabling these settings affects newly acquired legendary fish after your chosen setting is enabled. Scroll down for additional options.",
             "Section": "Legendary Fishing",
 			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
             "Default": "Default"
@@ -551,6 +557,30 @@
 			"AllowValues": "true, false",
             "Default": "false"
 		},
+			"Fish Smoker Faster": {
+			"Description": "Reduce the production time for Fish Smokers, with options ranging from 40 minutes to 10 minutes.",
+			"Section": "Fish Smoker",
+			"AllowValues": "Default (50min), 40min, 30min, 20min, 10min",
+            "Default": "Default (50min)"
+		},
+		    "Fish Smoker Materials": {
+			"Description": "Reduce the material requirements for crafting Fish Smokers.",
+			"Section": "Fish Smoker",
+			"AllowValues": "Default, Lessened Materials, 10 Hardwood",
+            "Default": "Default"
+		},
+		    "Fish Smoker No Coal": {
+			"Description": "Fish Smokers will no longer require coal to produce smoked fish.",
+			"Section": "Fish Smoker",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Fish Smoker Quality": {
+			"Description": "Select the quality of smoked fish produced by Fish Smokers.",
+			"Section": "Fish Smoker",
+			"AllowValues": "Default (No Quality), Gold Quality, Iridium Quality",
+            "Default": "Default (No Quality)"
+		},
 		    "Fish Shop Open All Days": {
 			"Description": "Willy’s Fishing Shop will now remain open every day, except during special event days.",
 			"Section": "Fishing Shop Additions and Prices",
@@ -641,14 +671,26 @@
 			"AllowValues": "Default (Level 4), Fishing Level 3, Fishing Level 2, Fishing Level 1",
             "Default": "Default (Level 4)"
 		},
+		    "Fish Shop Fish Smoker (REQ)": {
+			"Description": "Willy’s Shop now sells the Fish Smoker. This setting is essential for configuring the Fish Smoker settings below!",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Fish Shop Fish Smoker Price": {
+			"Description": "Select the sale price of the Fish Smoker at Willy’s Shop. This range spans from 3000g to 1g. Please note that the Fish Shop Fish Smoker (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "Default (20000g), 15000g, 10000g, 7500g, 5000g, 2500g, 2000g, 1500g, 1000g, 750g, 500g, 250g, 1g",
+            "Default": "Default (20000g)"
+		},
 		    "Fishable Prismatic Shards (REQ)": {
-			"Description": "Prismatic Shards are now available for fishing and can be caught in most locations. This setting is essential for configuring most of the Prismatic Shard settings below!",
+			"Description": "Prismatic Shards are now available for fishing and can be caught in most locations upon reaching Fishing Level 5. This setting is essential for configuring most of the Prismatic Shard settings below!",
 			"Section": "Prismatic Shard Fishing",
 			"AllowValues": "true, false",
             "Default": "false"
 		},
 		    "Prismatic Shard Sell Value": {
-			"Description": "Select the sell value of Prismatic Shards. The default value is 2000g, but you can adjust it within a range from 1750g to 1g. Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations! Scroll down for additional options.",
+			"Description": "Select the sell value of Prismatic Shards. The default value is 2000g, but you can adjust it within a range from 1750g to 1g. This will only apply to newly acquired Prismatic Shards after the setting is enabled! Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations! Scroll down for additional options.",
 			"Section": "Prismatic Shard Fishing",
 			"AllowValues": "2000g (Default), 1750g, 1500g, 1250g, 1000g, 750g, 500g, 250g, 1g",
 			"Default": "2000g (Default)"
