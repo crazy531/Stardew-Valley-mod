@@ -1,26 +1,22 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Buffs;
-using StardewValley.Buildings;
 using StardewValley.Extensions;
-using StardewValley.GameData.BigCraftables;
 using StardewValley.GameData.Locations;
 using StardewValley.ItemTypeDefinitions;
 using StardewValley.Locations;
 using StardewValley.Menus;
-using StardewValley.Monsters;
 using StardewValley.Objects;
 using StardewValley.Tools;
-using Object = StardewValley.Object;
 
 namespace StardewMods
 {
@@ -93,6 +89,7 @@ namespace StardewMods
         public static int sortMode = new int();
         public static bool uncaughtDark = new bool();
         public static bool onlyFish = new bool();
+        public static bool skipfish = new bool();
 
 
         public Overlay(ModEntry entry)
@@ -344,10 +341,10 @@ namespace StardewMods
                 }
 
                 if (foundWater)
-                {
+                {   
                     if (who.CurrentItem is FishingRod) who.setTileLocation(nearestWaterTile);
                     string locationName = who.currentLocation.Name;    //LOCATION FISH PREVIEW
-                    if (who.CurrentItem is FishingRod)
+                        if (who.CurrentItem is FishingRod)
                     {
                         if (!isMinigame)
                         {
@@ -684,8 +681,14 @@ namespace StardewMods
 
                     if (fishData.ContainsKey(str)) { 
                     string[] specificFishData = fishData[str]?.Split('/');
-                //    who.currentLocation.b;
-                    string[] timeSpans = specificFishData[5]?.Split(' ');
+                            if (specificFishData[1] == "trap")   //  fix  Beach Farm fishing trap
+                            {
+                                tempFish.Add(keys[i]);
+                                continue;
+
+                            }
+                            //    who.currentLocation.b;
+                            string[] timeSpans = specificFishData[5]?.Split(' ');
                     if (!rawFishDataWithLocation[keys[i]].Equals(Rectangle.Empty))
                     {
                         location = rawFishDataWithLocation[keys[i]].Value.Location;
@@ -707,9 +710,10 @@ namespace StardewMods
 
 
                             }
-                            catch { 
-                            
-                                continue;
+                            catch {
+                                        fail = true;
+
+                                        break;
                             
                             }
                          
@@ -768,7 +772,7 @@ namespace StardewMods
             //HashSet<string>  fishname = new HashSet<string>();
             int nuts = 0;
             Item item;
-
+            skipfish = false;
             for (int i = 0; i < freq; i++)
             {   
                 item = null;
@@ -776,9 +780,10 @@ namespace StardewMods
 
                 Game1.stats.TimesFished++;
                  int fish = AddHardcoded();
-               // int fish = -1;
                 string fishid = fish.ToString();
                 Game1.stats.TimesFished--;
+                if (skipfish) break;
+
                 if (fish != -2)//not fully hardcoded
                 {
                     if (fish == -1)//dynamic
@@ -841,9 +846,9 @@ namespace StardewMods
                         //    }
 
 
-                        fishid = item.QualifiedItemId;
+                        fishid = item.QualifiedItemId;  // string
 
-                        fish = item.ParentSheetIndex;
+                        fish = item.ParentSheetIndex;  // int
 
                         // Monitor.Log(fish + ":"+fishid,LogLevel.Info);
                     }
@@ -928,6 +933,82 @@ namespace StardewMods
             //    if (who.Tile.Y > 108f && !Game1.player.mailReceived.Contains("caughtIridiumKrobus")) return 2396;//iridium krobus
             //    return -1;
             //}
+            IModInfo modInfo = this.Helper.ModRegistry.Get("NermNermNerm.QuestableTractor");
+            //object api = Helper.ModRegistry.GetApi("NermNermNerm.QuestableTractor");
+
+            if (modInfo !=null && who.currentLocation == Game1.getFarm() )
+            {
+                skipfish=true;
+                Monitor.LogOnce("QuestableTractor detected, disable Farm fish forecast",LogLevel.Info) ;
+
+                if (((who.CurrentTool != null) ? who.CurrentTool.QualifiedItemId : null) == "(T)NermNermNerm.QuestableTractor.Harpoon")
+                {
+                    fishHere = new List<Item>() {  };
+                    fishChancesSlow = new Dictionary<string, int>() { };
+                }
+                else
+                {
+
+                 
+
+
+
+                    try
+                    {
+                        var a = modInfo.GetType().GetProperty("Mod").GetValue(modInfo);
+                        var b = a.GetType().GetField("QuestControllers", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(a);
+
+                        //  Type elementType = typeof(IEnumerable).GetMethod("GetType").Invoke(enumerable, null) as Type; ;
+
+                        var count = b.GetType().GetProperty("Count").GetValue(b);
+                        //      var getItemMethod = b.GetType().GetProperty("Item").GetValue(b);
+                        // MethodInfo getItemMethod = itemProperty.GetGetMethod();
+                        foreach (var item in b as IEnumerable)
+                        {
+                            // 使用反射调用get_Item方法来获取元素
+                            //      object element = getItemMethod.Invoke(b, new object[] { i });
+                            //        if (element == null) continue;
+                            //       else if ((string)element.GetType().GetProperty("Count").GetValue(element) == "QuestableTractor.BorrowHarpoonQuestStatus")
+                            var OverallQuestState = item.GetType().GetProperty("OverallQuestState", BindingFlags.Public | BindingFlags.Instance).GetValue(item);
+                            string ModDataKey = (string)item.GetType().GetProperty("ModDataKey", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(item);
+                            //string aaa = OverallQuestState.ToString() as string;
+                            if (ModDataKey == "QuestableTractor.BorrowHarpoonQuestStatus" && OverallQuestState.ToString() == "InProgress")
+                            {
+                                var State = item.GetType().GetProperty("State", BindingFlags.Public | BindingFlags.Instance).GetValue(item);
+
+                                if (State.ToString() != "CatchTheBigOne")
+                                {
+                                    skipfish = false;
+
+                                    return -1; }
+                            }
+                            else if (ModDataKey == "QuestableTractor.BorrowHarpoonQuestStatus" && OverallQuestState.ToString() == "Completed")
+                            {
+                                skipfish = false;
+                                Monitor.LogOnce("QuestableTractor's BorrowHarpoonQuest Completed , enable Farm fish forecast", LogLevel.Info);
+                                return -1;
+
+                            }
+
+                            // 输出元素
+                            //       Console.WriteLine(element);
+                        }
+                        fishHere = new List<Item>() { }; ;
+                        fishChancesSlow = new Dictionary<string, int>() {  };
+                        //  bool  hh =     b.ANY(a => a.ModDataKey == "QuestableTractor.BorrowHarpoonQuestStatus");
+
+
+
+                    }
+                    catch { }
+
+                }
+
+                oldGeneric = null;
+                return -1;
+            }
+
+
             if (who.currentLocation is IslandLocation)
             {
               //  if (Utility.CreateRandom(Game1.stats.DaysPlayed, Game1.stats.TimesFished, Game1.uniqueIDForThisGame).NextDouble() < 0.15 && (!Game1.player.team.limitedNutDrops.ContainsKey("IslandFishing") || Game1.player.team.limitedNutDrops["IslandFishing"] < 5)) return 73;
@@ -951,12 +1032,12 @@ namespace StardewMods
                     if (!(Game1.player.currentLocation as IslandSouthEast).fishedWalnut.Value)
                     {
                         fishHere = new List<Item>() { ItemRegistry.Create("(O)73") };
-                        fishChancesSlow = new Dictionary<string, int>() { { "-1", 1 }, { "(O)73", 1 }, { "(O)168", 0 } };
+                        fishChancesSlow = new Dictionary<string, int>() { { "-1", 10 }, { "(O)73", 10 }, { "(O)168", 1 } };
                     }
                     else
                     {
                         fishHere = new List<Item>() { ItemRegistry.Create("(O)168") };;
-                        fishChancesSlow = new Dictionary<string, int>() { { "-1", 1 }, { "(O)168", 1 } };
+                        fishChancesSlow = new Dictionary<string, int>() { { "-1", 10 }, { "(O)168", 10 } };
                     }
                     oldGeneric = null;
                     return -2;
