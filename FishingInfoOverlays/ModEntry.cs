@@ -31,7 +31,7 @@ namespace StardewMods
             helper.Events.Display.MenuChanged += this.OnMenuChanged;
             helper.Events.Display.RenderedActiveMenu += this.OnRenderMenu;
             helper.Events.Display.RenderedActiveMenu += GenericModConfigMenuIntegration;
-            helper.Events.Multiplayer.ModMessageReceived += this.OnModMessageReceived;
+       //     helper.Events.Multiplayer.ModMessageReceived += this.OnModMessageReceived;
         }
 
 
@@ -181,7 +181,8 @@ namespace StardewMods
 
         private void OnModMessageReceived(object sender, ModMessageReceivedEventArgs e)
         {
-            if (Context.IsWorldReady) overlay.Value.OnModMessageReceived(sender, e);
+            if (overlay.Value == null) overlay.Value = new Overlay(this);
+            if (Context.IsWorldReady) overlay.Value?.OnModMessageReceived(sender, e);
         }
 
 
