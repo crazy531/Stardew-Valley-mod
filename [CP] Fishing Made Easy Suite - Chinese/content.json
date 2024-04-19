@@ -2,8 +2,8 @@
 		    "Highlight Texts For More Info!": {
 			"Section": "= WELCOME! =",
 			"Description": "= Have A Fantastic Day & Happy Fishing! =",
-			"AllowValues": "Version 6.0.6",
-			"Default": "Version 6.0.6"
+			"AllowValues": "Version 6.0.8",
+			"Default": "Version 6.0.8"
         },
 		    "Disable Yearly Developer Gifts": {
 			"Description": "This setting will disable the mod developer gifts you will receive yearly. By default, you will receive a yearly randomized gift from myself :-)",
@@ -72,7 +72,7 @@
             "Default": "false"
 		},
 		    "Crab Pots No Trash": {
-			"Description": "Crab Pots will no longer yield trash items, but there remains a small chance of obtaining Broken Glasses and CDs.",
+			"Description": "Crab Pots will no longer yield trash items.",
 			"Section": "Crab Pot Fishing",
             "AllowValues": "true, false",
             "Default": "false"
@@ -1039,6 +1039,12 @@
 		},
 		    "Blobfish Exclusion": {
 			"Description": "Blobfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Goby Exclusion": {
+			"Description": "Goby fish are now excluded from the fishing minigame. As a result, you will be limited to catching just one. This setting for Goby will only apply if using the Specialty Fish On Farm setting.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"

@@ -2,7 +2,7 @@
     "config.Highlight Texts For More Info!.name": "Highlight Texts For More Info!",
     "config.section.= WELCOME! =.name": "= 欢迎使用! =",
     "config.Highlight Texts For More Info!.description": "= Have A Fantastic Day & Happy Fishing! =",
-    "config.Highlight Texts For More Info!.values.Version 6.0.6": "Version 6.0.6",
+    "config.Highlight Texts For More Info!.values.Version 6.0.8": "Version 6.0.8",
     "config.Disable Yearly Developer Gifts.name": "禁用开发者年度礼物",
     "config.Disable Yearly Developer Gifts.description": "默认每年会收到mod开发者随机的邮件礼物，勾选后禁用该功能 :-)",
     "config.Disable Yearly Developer Gifts.values.true": "true",
@@ -100,7 +100,7 @@
     "config.Cave Jelly Desert.values.true": "true",
     "config.Cave Jelly Desert.values.false": "false",
     "config.Crab Pots No Trash.name": "垃圾设置",
-    "config.Crab Pots No Trash.description": "蟹笼将不再产生垃圾物品，但仍然很小的机会获得破碎的眼镜和cd",
+    "config.Crab Pots No Trash.description": "蟹笼将不再产生垃圾物品",
     "config.section.Crab Pot Fishing.name": "蟹笼设置",
     "config.Crab Pots No Trash.values.true": "true",
     "config.Crab Pots No Trash.values.false": "false",
@@ -323,7 +323,7 @@
     "config.Fish Pond Rare Loot.values.Rare Loot Chance 4X": "概率改为4倍",
     "config.Fish Pond Rare Loot.values.Rare Loot Chance 5X": "概率改为5倍",
     "config.Fish Pond Rare Loot.values.Rare Loot Chance All 50%": "所有物品概率均等",
-"config.Fish Pond Rare Loot.values.Less Rare More Roe": "减少稀有物品率，增加鱼籽产出",
+    "config.Fish Pond Rare Loot.values.Less Rare More Roe": "减少稀有物品率，增加鱼籽产出",
     "config.FP Fish/Quest Spawn Time.name": "繁殖频率",
     "config.FP Fish/Quest Spawn Time.description": "选择鱼塘鱼类的繁殖频率. 这个选项启用后，只会影响鱼塘为空的时，添加的鱼.",
     "config.FP Fish/Quest Spawn Time.values.Default": "游戏默认",
@@ -1287,5 +1287,9 @@
     "config.Blobfish Exclusion.name": "删除水滴鱼",
     "config.Blobfish Exclusion.description": "限制全存档只能捕获一个，这样您仍然可以获得钓鱼成就",
     "config.Blobfish Exclusion.values.true": "true",
-    "config.Blobfish Exclusion.values.false": "false"
+    "config.Blobfish Exclusion.values.false": "false",
+    "config.Goby Exclusion.name": "删除虾虎鱼",
+    "config.Goby Exclusion.description": "限制全存档只能捕获一个，这样您仍然可以获得钓鱼成就",
+    "config.Goby Exclusion.values.true": "true",
+    "config.Goby Exclusion.values.false": "false"
 }
