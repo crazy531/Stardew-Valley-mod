@@ -1,4 +1,24 @@
 {
+  //config
   "maxNumberOfRecipesPerWeek.name": "maxNumber",
-  "maxNumberOfRecipesPerWeek.description": "The maximum number of randomly generated recipes per week."
+  "maxNumberOfRecipesPerWeek.description": "The maximum number of randomly generated recipes per week.",
+  "Pierre_store.name": "Pierre'store",
+  "Pierre_store.description": "Recipe available for acquisition at Pierre_store",
+  "Pierre_store_status1": "Pierre'store is enable",
+  "Pierre_store_status2": "Pierre'store is disable",
+  //text
+  "Command_1": "Buy a recipe. \n\nUsage: buyrecipe \"name of recipe\" \n\nNote: This is case sensitive!",
+  "Command_2": "Lists this weeks available recipes. \n\nUsage: showrecipes",
+  "Need_load": "Please load up a saved game first, then try again.",
+  "Purchase_status1": "Recipe {{recipe}} not found",
+  "Purchase_status2": "Recipe already known",
+  "Purchase_status3": "Recipe is not availble to buy this week",
+  "Purchase_status4": "You can't affort this recipe",
+  "Purchase_status5": "{{recipe}} bought for {{Cost}}!",
+  "Purchase_status6": "{{recipe}} bought for Pierre's  store!",
+  "Purchase_status7": "No recipes availabe this week. You know them all.",
+  "Purchase_status8": "This weeks recipes are: ",
+  "Purchase_status9": "Error Recipe:{{recipe}}, Skip It",
+  "Recipe_status1": "This week's recipe is available for purchase at Pierre's store."
+
 }

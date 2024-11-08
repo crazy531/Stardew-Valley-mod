@@ -9,10 +9,10 @@ using System.Threading;
 
 namespace Denifia.Stardew.BuyRecipes.Domain
 {
-    public class CookingRecipe
+    public class CookingRecipe 
     {
         public string Name { get; set; }
-
+        
         public string DisplayName { get; set; }
         public List<GameItemWithQuantity> Ingredients { get; set; }
         public GameItemWithQuantity ResultingItem { get; set; }
@@ -43,12 +43,7 @@ namespace Denifia.Stardew.BuyRecipes.Domain
                 else
                 {
 
-                    ResultingItem = new GameItemWithQuantity
-                    {
-                        Id = dataParts[2],
-                        Quantity = 1,
-                        DisplayName = null,
-                    };    
+                    ResultingItem = DeserializeResultingItem(dataParts[2]);
                 }
 
 

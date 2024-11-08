@@ -1,4 +1,24 @@
 {
+  //config
   "maxNumberOfRecipesPerWeek.name": "最大数量",
-  "maxNumberOfRecipesPerWeek.description": "每周随机显示可购买的食谱最大数量.（最低一个）"
+  "maxNumberOfRecipesPerWeek.description": "每周随机显示可购买的食谱最大数量.（最低一个）",
+  "Pierre_store.name": "皮埃尔商店",
+  "Pierre_store.description": "可以从皮埃尔商店购买每周随机配方",
+  "Pierre_store_status1": "皮埃尔商店功能开启",
+  "Pierre_store_status2": "皮埃尔商店功能禁用",
+
+  //text
+  "Command_1": "购买配方. \n\n控制台输入: buyrecipe \"name of recipe\" \n\n提示: 直接从控制台复制打印出的配方名字!\nshowrecipes可以打印配方",
+  "Command_2": "控制台列出本周可以购买的配方. \n\n控制台输入: showrecipes",
+  "Need_load": "请先加载一个存档后，重新输入命令.",
+  "Purchase_status1": "配方 {{recipe}} 没有找到",
+  "Purchase_status2": "该配方已学习",
+  "Purchase_status3": "本周没有该配方",
+  "Purchase_status4": "你的金额不足以购买该配方",
+  "Purchase_status5": "{{recipe}} 花费了 {{Cost}} 购买!",
+  "Purchase_status6": "{{recipe}} 已经从皮埃尔商店购买!",
+  "Purchase_status7": "这周已经没有配方可以购买.你可能学会了所有配方.",
+  "Purchase_status8": "这周可以购买配方如下: ",
+  "Purchase_status9": "错误的配方:{{recipe}}, 跳过加载",
+  "Recipe_status1": "这周随机配方可以在皮埃尔商店购买."
 }
