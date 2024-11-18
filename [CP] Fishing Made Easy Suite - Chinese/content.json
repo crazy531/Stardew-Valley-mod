@@ -1,9 +1,9 @@
 {
-		    "Highlight Texts For More Info!": {
+	 "Highlight Texts For More Info!": {
 			"Section": "= WELCOME! =",
 			"Description": "= Have A Fantastic Day & Happy Fishing! =",
-			"AllowValues": "Version 6.0.8",
-			"Default": "Version 6.0.8"
+			"AllowValues": "Version 6.0.22",
+			"Default": "Version 6.0.22"
         },
 		    "Disable Yearly Developer Gifts": {
 			"Description": "This setting will disable the mod developer gifts you will receive yearly. By default, you will receive a yearly randomized gift from myself :-)",
@@ -12,9 +12,9 @@
             "Default": "false"
 		},
 		    "Fishing Difficulty": {
-			"Description": "Select a difficulty setting for the fishing minigame. Easy Settings: Decrease difficulty by 5% to 100%, and include an option to max out the green fishing bar. This enhancement will be particularly beneficial for players aiming to collect fishing treasure chests and grand full fishing xp. Easy Sunday Fishing: Decrease difficulty by 10% to 30% on Sundays only. Hard Settings: Increase difficulty by 5% to 100% with a NIGHTMARE option for those seeking the ultimate challenge! For details on the Dynamic Weather settings, highlight the 'Dynamic Weather Info' below for more information. Scroll down for additional options.",
+			"Description": "Select a difficulty setting for the fishing minigame. Easy Settings: Decrease difficulty by 5% to 100%, and include a Super Easy Fishing option. Please note; The Super Easy; Max Fish Bar & Buff option will also increase the fishing level with a buff, this will also increase the chances certain fish can spawn. This enhancement will be particularly beneficial for players aiming to collect fishing treasure chests and grant full fishing xp. Easy Sunday Fishing: Decrease difficulty by 10% to 50% on Sundays only. Hard Settings: Increase difficulty by 5% to 100% with a NIGHTMARE option for those seeking the ultimate challenge! For details on the Dynamic Weather settings, highlight the 'Dynamic Weather Info' below for more information. Scroll down for additional options.",
             "Section": "Fishing Minigame",
-			"AllowValues": "Default, 5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 100% Easier + Max Fishing Bar, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE, Dynamic Weather (Easy), Dynamic Weather (Easier), Dynamic Weather (Easiest)",
+			"AllowValues": "Default, 5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, Super Easy; Max Fish Bar & Buff, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE, Dynamic Weather (Easy), Dynamic Weather (Easier), Dynamic Weather (Easiest)",
             "Default": "Default"
         },
 		    "= Dynamic Weather Info =": {
@@ -47,32 +47,62 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
+		    "Cave/Mine Fish Availability": {
+			"Description": "The rare cave and mine fish; Stonefish, Ice Pip, and Lava Eel are now available in specific locations. Must be Fishing Level 5. Stonefish; Mountain, Ice Pip; Forest Lake, Lava Eel; Desert. Choose a spawn rate for the fish. Ranges from 1% to 50% chance. Scroll down to see more options.",
+			"Section": "Fish Availability",
+            "AllowValues": "Default, 1% Chance, 5% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+            "Default": "Default"
+		},
+		    "Night Market Fish Availability": {
+			"Description": "The Night Market Fish (Midnight Squid, Spook Fish, and Blobfish) will now be fishable anywhere on the Beach during Winter after 5pm. Must be Fishing level 5. The All Times Of Day and All Seasons settings will also have an effect on these fish.",
+			"Section": "Fish Availability",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Fishable Prize Tickets": {
+			"Description": "Prize Tickets are now a fishable item. Similar to Seaweed and Algae (No minigame). Select a spawn rate ranging from a 1% to 50% chance. Scroll down for additional options.",
+			"Section": "Fish Availability",
+            "AllowValues": "Default, 1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+            "Default": "Default"
+		},
 		    "Clean Waters/No Trash": {
 			"Description": "Select a setting to remove or replace all trash items while fishing. No Trash: Disables trash while fishing entirely. Crab Pot Fish: Replaces trash items with crab pot fish during fishing. Note that occasional trash items may still be fished up. Trash serves as a fallback if no fish spawn, but these settings significantly reduce trash chances.",
-			"Section": "Fishing Minigame",
+			"Section": "Clean Waters",
             "AllowValues": "Default, No Trash, Crab Pot Fish",
             "Default": "Default"
 		},
 		    "Clean Waters/No Weeds": {
 			"Description": "Select a setting to remove or replace Seaweed, Green Algae, and White Algae while fishing. No Weeds and Algae: Disables all weeds and algae while fishing entirely. Crab Pot Fish: Replaces seaweed and algae with crab pot fish during fishing.",
-			"Section": "Fishing Minigame",
+			"Section": "Clean Waters",
             "AllowValues": "Default, No Weeds and Algae, Crab Pot Fish",
             "Default": "Default"
 		},
-		    "Clean Waters/No Jelly": {
-			"Description": "Select a setting to remove or replace jellies while fishing. No Jellies: Disables all jellies while fishing entirely. Crab Pot Fish: Replaces jellies with crab pot fish during fishing.",
-			"Section": "Fishing Minigame",
-            "AllowValues": "Default, No Jellies, Crab Pot Fish",
-            "Default": "Default"
+		    "Iridium Rod Attach. Slots": {
+			"Description": "Select how many attachment slots are available on the Iridium Rod. Default is 1. This will allow you to stack bobber and lure effects. Please note, this will only apply to newly acquired Iridium Rods after the setting is enabled, you may have to repurchase a rod! Ranges from 2 to 10 extra slots. Please note, adding extra slots may cause the slot graphics to go outside the info box. This will not have any effect on the game. Scroll down to see additional options.",
+			"Section": "Fishing Rods",
+            "AllowValues": "Default (1), 2 Slots, 3 Slots, 4 Slots, 5 Slots, 6 Slots, 7 Slots, 8 Slots, 9 Slots, 10 Slots",
+            "Default": "Default (1)"
 		},
-		    "Cave Jelly Desert": {
-			"Description": "Cave Jelly will now spawn in the Desert fishing area. Replaces the River Jelly that would normally spawn in that location.",
-			"Section": "Fishing Minigame",
+		    "Adv. Iridium Rod Attach. Slots": {
+			"Description": "Select how many attachment slots are available on the Advanced Iridium Rod. Default is 2. This will allow you to stack bobber and lure effects. Ranges from 3 to 10 extra slots. Please note, this will only apply to newly acquired Advanced Iridium Rods after the setting is enabled! Also note, adding extra slots may cause the slot graphics to go outside the info box. This will not have any effect on the game. Scroll down to see additional options.",
+			"Section": "Fishing Rods",
+            "AllowValues": "Default (2), 3 Slots, 4 Slots, 5 Slots, 6 Slots, 7 Slots, 8 Slots, 9 Slots, 10 Slots",
+            "Default": "Default (2)"
+		},
+		    "Crab Pots Same Spawn Rates": {
+			"Description": "Crab Pot fish will now all share the same spawn rates. Does not apply to the Jellies and Bug Meat settings below!",
+			"Section": "Crab Pot Fishing",
             "AllowValues": "true, false",
             "Default": "false"
 		},
 		    "Crab Pots No Trash": {
 			"Description": "Crab Pots will no longer yield trash items.",
+			"Section": "Crab Pot Fishing",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Crab Pots Jellies": {
+			"Description": "Crab Pots now spawn Jellies. This includes River, Sea, and Cave Jellies.",
 			"Section": "Crab Pot Fishing",
             "AllowValues": "true, false",
             "Default": "false"
@@ -83,8 +113,32 @@
             "AllowValues": "Default, Freshwater, Ocean",
             "Default": "Default"
 		},
+			"Jelly Spawn Rates": {
+			"Description": "Select a setting to determine the spawn rates of all jellies while fishing. Ranges from a 10% to 50% for common settings, 7% to 1% for rare settings, or remove jellies altogether. The Slightly Common (True 10%) setting puts the jellies in their own spawn pool, making them have a true 10% chance of spawning. The Default 10% chance has them in the same pool as normal fish so they're more rare than stated. All other spawn settings will also put the jellies in their own spawn pool. Using this setting also removes the luck chance boost. Scroll down for additional options.",
+			"Section": "Jelly Fishing",
+            "AllowValues": "Default (10%), Slightly Common (True 10%), Common (20%), More Common (30%), Very Common (50%), Rare (7%), Very Rare (5%), Near Impossible (1%), No Jellies",
+            "Default": "Default (10%)"
+		},
+			"Cave Jelly Desert": {
+			"Description": "Cave Jelly will now spawn in the Desert fishing area. Replaces the River Jelly that would normally spawn in that location.",
+			"Section": "Jelly Fishing",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Jellies Are Crab Pot Fish": {
+			"Description": "All jellies will now be any crab pot fish when fished up. This has no effect on the Cave Jelly Desert setting.",
+			"Section": "Jelly Fishing",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
 		    "Fish Sell Value": {
 			"Description": "Select the sell value of all fish (except legendary fish). The range is from 10% to 1000% increase or a 10% to 99% decrease. Refer to the Legendary Fish Sell Values setting below to do the same for legendary fish. Note that enabling or disabling these settings affects newly acquired fish after your chosen setting is enabled. Scroll down for additional options.",
+            "Section": "Value of Fishing",
+			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
+            "Default": "Default"
+        },
+		    "Legendary Fish Sell Value": {
+			"Description": "Select the sell value of legendary fish. The range is from 10% to 1000% increase and a 10% to 99% decrease. Note that enabling or disabling these settings affects newly acquired legendary fish after your chosen setting is enabled. Scroll down for additional options.",
             "Section": "Value of Fishing",
 			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
             "Default": "Default"
@@ -113,9 +167,39 @@
 			"AllowValues": "true, false",
             "Default": "false"
 		},
+		    "Legendary Quests (Recatch REQ)": {
+			"Description": "Unlock new quests related to legendary fish! Keep in mind that the ‘Recatch Legendary Fish’ setting must be enabled for this feature to function. Once you’ve successfully caught a legendary fish and are in the appropriate season, these new quests will become available.",
+			"Section": "Legendary Fishing",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
 		    "Entire Area Legendary Fish": {
 			"Description": "Legendary fish are no longer restricted to specific points on the map; they can now be caught anywhere within their residing area. For instance, the Crimsonfish can be found all around the beach, not solely at the eastern docks.",
             "Section": "Legendary Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Legendary Fish Spawn Rates": {
+		    "Description": "Select the chances of legendary fish spawning while fishing. Scroll down for additional options.",
+			"Section": "Legendary Fishing",
+            "AllowValues": "Default, Common (20%), More Common (30%), Very Common (50%), Rare (7-14%), Very Rare (5%), Near Impossible (1%)",
+            "Default": "Default"
+		},
+		    "Legendary Fish No Level": {
+			"Description": "Removes the fishing requirements in order for legendary fish to spawn.",
+			"Section": "Legendary Fishing",
+			"AllowValues": "true, false",
+			"Default": "false"
+		},
+		    "Legendary Fish No Crown": {
+		    "Description": "Legendary fish will no longer have the crown (Boss Fish) icon during the minigame. This will also lower the xp to a standard fish rate.",
+			"Section": "Legendary Fishing",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Qi's Legendary Fish Crown": {
+		    "Description": "The legendary fish that appear during Qi’s Special Order Request will now be distinguished by the crown (Boss Fish) icon in the fishing minigame. This will also increase the xp to a legendary fish rate.",
+			"Section": "Legendary Fishing",
 			"AllowValues": "true, false",
             "Default": "false"
 		},
@@ -130,24 +214,6 @@
 			"Section": "Legendary Fishing",
             "AllowValues": "true, false",
             "Default": "false"
-		},
-		    "Legendary Quests (Recatch REQ)": {
-			"Description": "Unlock new quests related to legendary fish! Keep in mind that the ‘Recatch Legendary Fish’ setting must be enabled for this feature to function. Once you’ve successfully caught a legendary fish and are in the appropriate season, these new quests will become available.",
-			"Section": "Legendary Fishing",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Legendary Fish Sell Value": {
-			"Description": "Select the sell value of legendary fish. The range is from 10% to 1000% increase and a 10% to 99% decrease. Note that enabling or disabling these settings affects newly acquired legendary fish after your chosen setting is enabled. Scroll down for additional options.",
-            "Section": "Legendary Fishing",
-			"AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
-            "Default": "Default"
-        },
-		    "Rare Legendary Fish": {
-		    "Description": "Select the rarity of legendary fish appearing while fishing.",
-			"Section": "Legendary Fishing",
-            "AllowValues": "Default, Rare, Very Rare, Near Impossible",
-            "Default": "Default"
 		},
 		    "Lucky Legendary Fish": {
 		    "Description": "Legendary fish now only spawn when daily luck from the TV is at its highest.",
@@ -185,11 +251,65 @@
 			"AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Qi's Legendary Fish Icon": {
-		    "Description": "The Legendary Fish that appear during Qi’s Special Order Request will now be distinguished by the ‘Boss Fish’ icon in the fishing minigame.",
-			"Section": "Legendary Fishing",
+		    "Fishable Prismatic Shards (REQ)": {
+			"Description": "Prismatic Shards are now available for fishing and can be caught in most locations upon reaching Fishing Level 5. Prismatic Shards can also be placed inside fish tanks with this setting enabled! This setting is essential for configuring most of the Prismatic Shard settings below!",
+			"Section": "Prismatic Shard Fishing",
 			"AllowValues": "true, false",
             "Default": "false"
+		},
+		    "Prismatic Shard Spawn Rate": {
+			"Description": "Select the spawn rate of fishable Prismatic Shards. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "Default (15%), Common (30%), Very Common (50%), Rare (10%), Very Rare (5%), Near Impossible (1%)",
+            "Default": "Default (15%)"
+		},
+		    "Prismatic Shards No Level": {
+			"Description": "Removes the fishing level 5 requirement in order for Prismatic Shards to spawn. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+			"Default": "false"
+		},
+		    "Prismatic Shards No Crown": {
+			"Description": "Prismatic Shards will no longer have the legendary fish (crown) icon during the fishing minigame. This will allow lower the amount of fishing xp earned when catching a shard. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Lucky Prismatic Shards": {
+			"Description": "Prismatic Shards will now only spawn when daily luck is at its highest (purple star on the TV). Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Prismatic Shards Weather": {
+			"Description": "Prismatic Shards are now exclusive to rainy and snowy weather for catching. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+			"Default": "false"
+	    },
+		    "Prismatic Shards 7am To 9am": {
+			"Description": "Prismatic Shards are now exclusive to the hours between 7AM and 9AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Prismatic Shards 12pm To 2pm": {
+		    "Description": "Prismatic Shards are now exclusive to the hours between 12PM and 2PM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Prismatic Shards 11pm To 1am": {
+			"Description": "Prismatic Shards are now exclusive to the hours between 11PM and 1AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Prismatic Shard Sell Value": {
+			"Description": "Select the sell value of Prismatic Shards. The default value is 2000g, but you can adjust it within a range from 1750g to 1g. This will only apply to newly acquired Prismatic Shards after the setting is enabled! Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations! Scroll down for additional options.",
+			"Section": "Prismatic Shard Fishing",
+			"AllowValues": "2000g (Default), 1750g, 1500g, 1250g, 1000g, 750g, 500g, 250g, 1g",
+			"Default": "2000g (Default)"
 		},
 		    "Fish Pond Rare Loot": {
 			"Description": "Select the likelihood of rare loot spawning from fish pond buildings. Options range from 2X to 5X increase. Alternatively, the Rare Loot Chance All 50% option ensures an equal chance for all rare loot from fish ponds to appear. The Less Rare More Roe option decreases the chances for rare loot but increases the chances for Roe. Scroll down for additional options.",
@@ -204,7 +324,7 @@
             "Default": "Default"
         },
 		    "Fish Pond Legendary Fish (REQ)": {
-			"Description": "Legendary fish can now be added to the fish pond buildings. This setting is required for the legendary fish pond settings below!",
+			"Description": "Legendary fish will now have a variety of loot from fish pond buildings rather than just being roe. This setting is required for the legendary fish pond settings below!",
 			"Section": "Fish Pond Buildings",
 			"AllowValues": "true, false",
             "Default": "false"
@@ -432,7 +552,7 @@
             "Default": "Default"
 		},
 		    "Worm Bin Materials": {
-			"Description": "Reduce the material requirements for crafting the Worm Bin machine.",
+			"Description": "Reduce the material requirements for crafting Worm Bins.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default, Lessened Materials, 1 Iron Bar",
             "Default": "Default"
@@ -444,13 +564,13 @@
             "Default": "Default (Level 4)"
 		},
 		    "Worm Bin Bait Min Amount": {
-			"Description": "Select the minimum daily bait production from the Worm Bin, with options ranging from 2 to 100. Scroll down for additional options.",
+			"Description": "Select the minimum daily bait production from Worm Bins, with options ranging from 2 to 100. Scroll down for additional options.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default (4), 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (4)"
 		},
 		    "Worm Bin Bait Max Amount": {
-			"Description": "Select the maximum daily bait production from the Worm Bin, with options ranging from 6 to 100. Scroll down for additional options.",
+			"Description": "Select the maximum daily bait production from Worm Bins, with options ranging from 6 to 100. Scroll down for additional options.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (5)"
@@ -462,25 +582,25 @@
             "Default": "false"
 		},
 		    "Worm Bin Wild Bait Chance": {
-			"Description": "Select the probability of daily Wild Bait production from the Worm Bin. The available range spans from 15% to 100% chance. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the probability of daily Wild Bait production from Worm Bins. The available range spans from 15% to 100% chance. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default (10%), 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance, 55% Chance, 60% Chance, 65% Chance, 70% Chance, 75% Chance, 80% Chance, 85% Chance, 90% Chance, 95% Chance, 100% Chance",
             "Default": "Default (10%)"
 		},
 		    "Worm Bin Wild Bait Min Amount": {
-			"Description": "Select the minimum daily production of Wild Bait from the Worm Bin, with a range spanning from 2 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the minimum daily production of Wild Bait from Worm Bins, with a range spanning from 2 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (2)"
 		},
 		    "Worm Bin Wild Bait Max Amount": {
-			"Description": "Select the maximum daily production of Wild Bait from the Worm Bin, with a range spanning from 6 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the maximum daily production of Wild Bait from Worm Bins, with a range spanning from 6 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Worm Bin Machinery",
 			"AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (5)"
 		},
 		    "Deluxe Worm Bin Materials": {
-			"Description": "Reduce the material requirements for crafting the Deluxe Worm Bin machine.",
+			"Description": "Reduce the material requirements for crafting Deluxe Worm Bins.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default, Lessened Materials, 10 Moss",
             "Default": "Default"
@@ -492,13 +612,13 @@
             "Default": "Default (Level 8)"
 		},
 		    "Deluxe Worm Bin Bait Min": {
-			"Description": "Select the minimum daily bait production from the Deluxe Worm Bin, with options ranging from 2 to 100. Scroll down for additional options.",
+			"Description": "Select the minimum daily bait production from Deluxe Worm Bins, with options ranging from 2 to 100. Scroll down for additional options.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default (4), 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (4)"
 		},
 		    "Deluxe Worm Bin Bait Max": {
-			"Description": "Select the maximum daily bait production from the Deluxe Worm Bin, with options ranging from 6 to 100. Scroll down for additional options.",
+			"Description": "Select the maximum daily bait production from Deluxe Worm Bins, with options ranging from 6 to 100. Scroll down for additional options.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (5)"
@@ -510,19 +630,19 @@
             "Default": "false"
 		},
 		    "Deluxe Worm Bin Wild B. Chance": {
-			"Description": "Select the probability of daily Wild Bait production from the Deluxe Worm Bin. The available range spans from 15% to 100% chance. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the probability of daily Wild Bait production from Deluxe Worm Bins. The available range spans from 15% to 100% chance. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default (10%), 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance, 55% Chance, 60% Chance, 65% Chance, 70% Chance, 75% Chance, 80% Chance, 85% Chance, 90% Chance, 95% Chance, 100% Chance",
             "Default": "Default (10%)"
 		},
 		    "Deluxe Worm Bin Wild Bait Min": {
-			"Description": "Select the minimum daily production of Wild Bait from the Deluxe Worm Bin, with a range spanning from 2 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the minimum daily production of Wild Bait from Deluxe Worm Bins, with a range spanning from 2 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (2)"
 		},
 		    "Deluxe Worm Bin Wild Bait Max": {
-			"Description": "Select the maximum daily production of Wild Bait from the Deluxe Worm Bin, with a range spanning from 6 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+			"Description": "Select the maximum daily production of Wild Bait from Deluxe Worm Bins, with a range spanning from 6 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
 			"Section": "Deluxe Worm Bin Machinery",
 			"AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
             "Default": "Default (5)"
@@ -545,6 +665,24 @@
 			"AllowValues": "Default (Level 4), Fishing Level 3, Fishing Level 2, Fishing Level 1",
             "Default": "Default (Level 4)"
 		},
+		    "Recycling Machine Produce Min": {
+			"Description": "Select the minimum daily production of materials from Recycling Machines, all items produced by default have different ranges. Picking an option, will make all trash items produce the same number of materials. Scroll down for additional options.",
+			"Section": "Recycling Machine",
+			"AllowValues": "Default, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default"
+		},
+		    "Recycling Machine Produce Max": {
+			"Description": "Select the maximum daily production of materials from Recycling Machines, all items produced by default have different ranges. Picking an option, will make all trash items produce the same number of materials. Scroll down for additional options.",
+			"Section": "Recycling Machine",
+			"AllowValues": "Default, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default"
+		},
+		    "Recycling Machine Required Mats.": {
+			"Description": "Select the amount of items required to be placed inside Recycling Machines. Default is 1. Scroll down for additional options.",
+			"Section": "Recycling Machine",
+			"AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (1)"
+		},
 		    "Recycling Machine Tackle": {
 			"Description": "Recycling Machines will now occasionally yield fishing tackle from all trash items.",
 			"Section": "Recycling Machine",
@@ -559,27 +697,69 @@
 		},
 			"Fish Smoker Faster": {
 			"Description": "Reduce the production time for Fish Smokers, with options ranging from 40 minutes to 10 minutes.",
-			"Section": "Fish Smoker",
+			"Section": "Fish Smoker Machinery",
 			"AllowValues": "Default (50min), 40min, 30min, 20min, 10min",
             "Default": "Default (50min)"
 		},
 		    "Fish Smoker Materials": {
 			"Description": "Reduce the material requirements for crafting Fish Smokers.",
-			"Section": "Fish Smoker",
+			"Section": "Fish Smoker Machinery",
 			"AllowValues": "Default, Lessened Materials, 10 Hardwood",
             "Default": "Default"
 		},
 		    "Fish Smoker No Coal": {
 			"Description": "Fish Smokers will no longer require coal to produce smoked fish.",
-			"Section": "Fish Smoker",
+			"Section": "Fish Smoker Machinery",
 			"AllowValues": "true, false",
             "Default": "false"
 		},
 		    "Fish Smoker Quality": {
 			"Description": "Select the quality of smoked fish produced by Fish Smokers.",
-			"Section": "Fish Smoker",
+			"Section": "Fish Smoker Machinery",
 			"AllowValues": "Default (No Quality), Gold Quality, Iridium Quality",
             "Default": "Default (No Quality)"
+		},
+		    "Fish Smoker Produce Min": {
+			"Description": "Select the minimum daily production of smoked fish from Fish Smokers, with a range spanning from 2 to 100. Scroll down for additional options.",
+			"Section": "Fish Smoker Machinery",
+			"AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (1)"
+		},
+		    "Fish Smoker Produce Max": {
+			"Description": "Select the maximum daily production of smoked fish from Fish Smokers, with a range spanning from 2 to 100. Scroll down for additional options.",
+			"Section": "Fish Smoker Machinery",
+			"AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (1)"
+		},
+		    "Fish Smoker Required Mats.": {
+			"Description": "Select the amount of fish required to be placed inside Fish Smokers. Default is 1. Scroll down for additional options.",
+			"Section": "Fish Smoker Machinery",
+			"AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (1)"
+		},
+		    "Bait Maker Materials": {
+			"Description": "Reduce the material requirements for crafting Bait Makers.",
+			"Section": "Bait Maker Machinery",
+			"AllowValues": "Default, Lessened Materials, 1 Iron Bar",
+            "Default": "Default"
+		},
+		    "Bait Maker Produce Min": {
+			"Description": "Select the minimum daily production of bait from Bait Makers, with a range spanning from 6 to 100. Scroll down for additional options.",
+			"Section": "Bait Maker Machinery",
+			"AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (5)"
+		},
+		    "Bait Maker Produce Max": {
+			"Description": "Select the maximum daily production of bait from Bait Makers, with a range spanning from 11 to 100. Scroll down for additional options.",
+			"Section": "Bait Maker Machinery",
+			"AllowValues": "Default (10), 11, 12, 13, 14, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (10)"
+		},
+		    "Bait Maker Required Mats.": {
+			"Description": "Select the amount of fish required to be placed inside Bait Makers. Default is 1. Scroll down for additional options.",
+			"Section": "Bait Maker Machinery",
+			"AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+            "Default": "Default (1)"
 		},
 		    "Fish Shop Open All Days": {
 			"Description": "Willy’s Fishing Shop will now remain open every day, except during special event days.",
@@ -588,7 +768,7 @@
             "Default": "false"
 		},
 		    "Crab Pot Price": {
-			"Description": "Select the price of crab pots at Willy’s Fishing Shop. The available range spans from 1g to 3000g. Scroll down for additional options.",
+			"Description": "Select the price of Crab Pots at Willy’s Fishing Shop. The available range spans from 1g to 3000g. Scroll down for additional options.",
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "Default (1500g), 1250g, 1000g, 750g, 500g, 250g, 1g, 1750g, 2000g, 2250g, 1g, 2750g, 3000g",
             "Default": "Default (1500g)"
@@ -598,6 +778,12 @@
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "true, false",
             "Default": "false"
+		},
+		    "Adv. Iridium Fish Rod Level": {
+			"Description": "The Advanced Iridium Fishing Rod will now be offered for sale at Willy's Fishing Shop by fishing level rather than having achieved fishing mastery. You can choose between Fishing Level 9 or 1.",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "Default, Fishing Level 9, Fishing Level 1",
+            "Default": "Default"
 		},
 		    "All Fishing Rod Prices": {
 			"Description": "Select the price of the Iridium Fishing Rod at Willy’s Fishing Shop. The available range spans from 25% to 100% cheaper, or from 25% to 100% more expensive. Scroll down for additional options.",
@@ -636,7 +822,7 @@
             "Default": "5000g (Default)"
 		},
 		    "Fishing Shop Worm Bin (REQ)": {
-			"Description": "Willy’s Shop now sells the Worm Bin. This setting is essential for configuring the Worm Bin settings below!",
+			"Description": "Willy’s Shop now sells Worm Bins. This setting is essential for configuring the Worm Bin settings below!",
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "true, false",
             "Default": "false"
@@ -648,13 +834,43 @@
             "Default": "Default (5000g)"
 		},
 		    "Fishing Shop Worm Bin Avail.": {
-			"Description": "Select the required fishing level for unlocking the Worm Bin at Willy’s Shop. Please note that the Fishing Shop Worm Bin (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+			"Description": "Select the required fishing level for unlocking the Worm Bin at Willy’s Shop. Please note that the Fishing Shop Worm Bin (REQ) setting must be enabled for this to take effect!",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "Default (Level 4), Fishing Level 3, Fishing Level 2, Fishing Level 1",
+            "Default": "Default (Level 4)"
+		},
+		    "Fish Shop Deluxe Worm Bin (REQ)": {
+			"Description": "Willy’s Shop now sells Deluxe Worm Bins. This setting is essential for configuring the Deluxe Worm Bin settings below!",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Fish Shop Deluxe Worm Bin Price": {
+			"Description": "Select the sale price of the Deluxe Worm Bin at Willy’s Shop. This range spans from 4000g to 1g. Please note that the Fish Shop Deluxe Worm Bin (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "Default (10000g), 7500g, 5000g, 4000g, 3000g, 2000g, 1000g, 750g, 500g, 250g, 1g",
+            "Default": "Default (10000g)"
+		},
+		    "Fish Shop Deluxe Worm Bin Avail.": {
+			"Description": "Select the required fishing level for unlocking the Deluxe Worm Bin at Willy’s Shop. Please note that the Fish Shop Deluxe Worm Bin (REQ) setting must be enabled for this to take effect!",
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "Default (Level 8), Fishing Level 6, Fishing Level 4, Fishing Level 2, Fishing Level 1",
             "Default": "Default (Level 8)"
 		},
+		    "Fishing Shop Bait Maker (REQ)": {
+			"Description": "Willy’s Shop now sells Bait Makers. This setting is essential for configuring the Bait Maker settings below!",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Fishing Shop Bait Maker Price": {
+			"Description": "Select the sale price of the Bait Maker at Willy’s Shop. This range spans from 4000g to 1g. Please note that the Fish Shop Bait Maker (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+			"Section": "Fishing Shop Additions and Prices",
+			"AllowValues": "Default (7500g), 5000g, 4000g, 3000g, 2000g, 1000g, 750g, 500g, 250g, 1g",
+            "Default": "Default (7500g)"
+		},
 		    "Fish Shop Recycle Machine (REQ)": {
-			"Description": "Willy’s Shop now sells the Recycling Machine. This setting is essential for configuring the Recycling Machine settings below!",
+			"Description": "Willy’s Shop now sells Recycling Machines. This setting is essential for configuring the Recycling Machine settings below!",
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "true, false",
             "Default": "false"
@@ -672,7 +888,7 @@
             "Default": "Default (Level 4)"
 		},
 		    "Fish Shop Fish Smoker (REQ)": {
-			"Description": "Willy’s Shop now sells the Fish Smoker. This setting is essential for configuring the Fish Smoker settings below!",
+			"Description": "Willy’s Shop now sells Fish Smokers. This setting is essential for configuring the Fish Smoker settings below!",
 			"Section": "Fishing Shop Additions and Prices",
 			"AllowValues": "true, false",
             "Default": "false"
@@ -683,68 +899,8 @@
 			"AllowValues": "Default (20000g), 15000g, 10000g, 7500g, 5000g, 2500g, 2000g, 1500g, 1000g, 750g, 500g, 250g, 1g",
             "Default": "Default (20000g)"
 		},
-		    "Fishable Prismatic Shards (REQ)": {
-			"Description": "Prismatic Shards are now available for fishing and can be caught in most locations upon reaching Fishing Level 5. This setting is essential for configuring most of the Prismatic Shard settings below!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Prismatic Shard Sell Value": {
-			"Description": "Select the sell value of Prismatic Shards. The default value is 2000g, but you can adjust it within a range from 1750g to 1g. This will only apply to newly acquired Prismatic Shards after the setting is enabled! Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations! Scroll down for additional options.",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "2000g (Default), 1750g, 1500g, 1250g, 1000g, 750g, 500g, 250g, 1g",
-			"Default": "2000g (Default)"
-		},
-		    "Prismatic Shards Fish Tanks": {
-			"Description": "Prismatic Shards can now be added to the aquarium fish tanks. Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Prismatic Shard Spawn Rate": {
-			"Description": "Select the spawn rate of fishable Prismatic Shards. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "Default (15%), Common (30%), Very Common (50%), Rare (10%), Very Rare (5%), Near Impossible (1%)",
-            "Default": "Default (15%)"
-		},
-		    "Prismatic Shards On Farm": {
-			"Description": "Prismatic Shards can now be caught on the farm, and this applies to all farm maps. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Lucky Prismatic Shards": {
-			"Description": "The spawn rate of Prismatic Shards varies based on the daily luck reported by the TV. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Prismatic Shards Weather": {
-			"Description": "Prismatic Shards are now exclusive to rainy and snowy weather for catching. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-			"Default": "false"
-	    },
-		    "Prismatic Shards 7am To 9am": {
-			"Description": "Prismatic Shards are now exclusive to the hours between 7AM and 9AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Prismatic Shards 12pm To 2pm": {
-		    "Description": "Prismatic Shards are now exclusive to the hours between 12PM and 2PM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Prismatic Shards 11pm To 1am": {
-			"Description": "Prismatic Shards are now exclusive to the hours between 11PM and 1AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
-			"Section": "Prismatic Shard Fishing",
-			"AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Pufferfish Exclusion": {
-			"Description": "Pufferfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Albacore Exclusion": {
+			"Description": "Albacore are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
@@ -755,14 +911,14 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Tuna Exclusion": {
-			"Description": "Tuna are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Blobfish Exclusion": {
+			"Description": "Blobfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
 		},
-	        "Sardine Exclusion": {
-			"Description": "Sardine are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Blue Discus Exclusion": {
+			"Description": "Blue Discus are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
@@ -773,38 +929,8 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Largemouth Bass Exclusion": {
-			"Description": "Largemouth Bass are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Smallmouth Bass Exclusion": {
-			"Description": "Smallmouth Bass are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Rainbow Trout Exclusion": {
-			"Description": "Rainbow Trout are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Salmon Exclusion": {
-			"Description": "Salmon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Walleye Exclusion": {
-			"Description": "Walleye are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Perch Exclusion": {
-			"Description": "Perch are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Bullhead Exclusion": {
+			"Description": "Bullhead are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
@@ -821,138 +947,6 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Pike Exclusion": {
-			"Description": "Pike are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Sunfish Exclusion": {
-			"Description": "Sunfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Red Mullet Exclusion": {
-			"Description": "Red Mullet are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Herring Exclusion": {
-			"Description": "Herring are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Eel Exclusion": {
-			"Description": "Eel are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Octopus Exclusion": {
-			"Description": "Octopus are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Red Snapper Exclusion": {
-			"Description": "Red Snapper are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Squid Exclusion": {
-			"Description": "Squid are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Sea Cucumber Exclusion": {
-			"Description": "Sea Cucumber are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Super Cucumber Exclusion": {
-			"Description": "Super Cucumber are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Ghostfish Exclusion": {
-			"Description": "Ghostfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Stonefish Exclusion": {
-			"Description": "Stonefish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Ice Pip Exclusion": {
-			"Description": "Ice Pip are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Lava Eel Exclusion": {
-			"Description": "Lava Eel are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Sandfish Exclusion": {
-			"Description": "Sandfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Scorpion Carp Exclusion": {
-			"Description": "Scorpion Carp are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Flounder Exclusion": {
-			"Description": "Flounder are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Midnight Carp Exclusion": {
-			"Description": "Midnight Carp are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Sturgeon Exclusion": {
-			"Description": "Sturgeon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Tiger Trout Exclusion": {
-			"Description": "Tiger Trout are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Bullhead Exclusion": {
-			"Description": "Bullhead are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Tilapia Exclusion": {
-			"Description": "Tilapia are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
 		    "Chub Exclusion": {
 			"Description": "Chub are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
@@ -965,80 +959,20 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Albacore Exclusion": {
-			"Description": "Albacore are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Eel Exclusion": {
+			"Description": "Eel are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Shad Exclusion": {
-			"Description": "Shad are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Flounder Exclusion": {
+			"Description": "Flounder are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
 		},
-		    "Lingcod Exclusion": {
-			"Description": "Lingcod are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Halibut Exclusion": {
-			"Description": "Halibut are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Woodskip Exclusion": {
-			"Description": "Woodskip are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Void Salmon Exclusion": {
-			"Description": "Void Salmon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Slimejack Exclusion": {
-			"Description": "Slimejack are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Stingray Exclusion": {
-			"Description": "Stingray are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Lionfish Exclusion": {
-			"Description": "Lionfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Blue Discus Exclusion": {
-			"Description": "Blue Discus are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Midnight Squid Exclusion": {
-			"Description": "Midnight Squid are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Spook Fish Exclusion": {
-			"Description": "Spook Fish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
-			"Section": "Fishing Minigame Exclusions",
-            "AllowValues": "true, false",
-            "Default": "false"
-		},
-		    "Blobfish Exclusion": {
-			"Description": "Blobfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+		    "Ghostfish Exclusion": {
+			"Description": "Ghostfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
 			"Section": "Fishing Minigame Exclusions",
             "AllowValues": "true, false",
             "Default": "false"
@@ -1049,4 +983,227 @@
             "AllowValues": "true, false",
             "Default": "false"
 		},
+		    "Halibut Exclusion": {
+			"Description": "Halibut are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Herring Exclusion": {
+			"Description": "Herring are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Ice Pip Exclusion": {
+			"Description": "Ice Pip are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Largemouth Bass Exclusion": {
+			"Description": "Largemouth Bass are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Lava Eel Exclusion": {
+			"Description": "Lava Eel are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Lingcod Exclusion": {
+			"Description": "Lingcod are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Lionfish Exclusion": {
+			"Description": "Lionfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Midnight Carp Exclusion": {
+			"Description": "Midnight Carp are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Midnight Squid Exclusion": {
+			"Description": "Midnight Squid are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Octopus Exclusion": {
+			"Description": "Octopus are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Perch Exclusion": {
+			"Description": "Perch are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Pike Exclusion": {
+			"Description": "Pike are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Pufferfish Exclusion": {
+			"Description": "Pufferfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Rainbow Trout Exclusion": {
+			"Description": "Rainbow Trout are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Red Mullet Exclusion": {
+			"Description": "Red Mullet are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Red Snapper Exclusion": {
+			"Description": "Red Snapper are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Salmon Exclusion": {
+			"Description": "Salmon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Sandfish Exclusion": {
+			"Description": "Sandfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Sardine Exclusion": {
+			"Description": "Sardine are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Scorpion Carp Exclusion": {
+			"Description": "Scorpion Carp are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Sea Cucumber Exclusion": {
+			"Description": "Sea Cucumber are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Shad Exclusion": {
+			"Description": "Shad are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Slimejack Exclusion": {
+			"Description": "Slimejack are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Smallmouth Bass Exclusion": {
+			"Description": "Smallmouth Bass are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Spook Fish Exclusion": {
+			"Description": "Spook Fish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Squid Exclusion": {
+			"Description": "Squid are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Stingray Exclusion": {
+			"Description": "Stingray are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Stonefish Exclusion": {
+			"Description": "Stonefish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Sturgeon Exclusion": {
+			"Description": "Sturgeon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Sunfish Exclusion": {
+			"Description": "Sunfish are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Super Cucumber Exclusion": {
+			"Description": "Super Cucumber are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Tiger Trout Exclusion": {
+			"Description": "Tiger Trout are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Tilapia Exclusion": {
+			"Description": "Tilapia are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Tuna Exclusion": {
+			"Description": "Tuna are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Void Salmon Exclusion": {
+			"Description": "Void Salmon are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Walleye Exclusion": {
+			"Description": "Walleye are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+		    "Woodskip Exclusion": {
+			"Description": "Woodskip are now excluded from the fishing minigame. As a result, you will be limited to catching just one.",
+			"Section": "Fishing Minigame Exclusions",
+            "AllowValues": "true, false",
+            "Default": "false"
+		},
+    
     }
